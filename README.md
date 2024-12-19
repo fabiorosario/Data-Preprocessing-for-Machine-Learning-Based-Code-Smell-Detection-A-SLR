@@ -20,4 +20,13 @@ To facilitate the linking of files from this repository to our work, I describe 
 3. meta-analysis_feature-selection.csv: This is a CSV file containing the data needed to perform the meta-analysis regarding feature selection. For feature selection, the studies aimed to reduce the size of the inputs to the ML models, selecting the most important attributes of the datasets with different techniques, e.g., GA, Chisquare, PCA, and Wrapper. They also verified the impact of using or not using these techniques in these models.
 
 4. meta_analysis.ipynb: Python script used for meta-analysis to analyze the impact of preprocessing techniques on the performance of ML models (section 6) in two aspects of data preprocessing: data balancing (subsection 6.1) and feature selection (subsection 6.2). Additionally, ANOVA was used to analyze the average impact of different preprocessing techniques (subsection 6.3).
+   
+5. bibliographic_data.RData: file used for bibliometric analysis, containing data from the 69 selected primary studies. The following are the steps to use the Bibliometrix tool:
+  - download and install the latest version of R | https://cran.r-project.org;
+  - download and install the latest version of RStudio | https://posit.co/downloads/;
+  - in the RStudio console, install the bibliometrix package with the command: > install.packages("bibliometrix", dependencies=TRUE);
+  - load the bibliometrix package with the command: > library(bibliometrix);
+  - open biblioshiny (bibliometrix GUI) with the command: > biblioshiny(); and
+  - load the "bibliographic_data.RData" file into biblioshiny and generate the graphs/tables of the bibliometric metrics. 
+
 
